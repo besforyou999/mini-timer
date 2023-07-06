@@ -8,6 +8,12 @@ React로 개발한 타이머 토이 프로젝트
 ## 프로젝트 설명
 <br>
 
+React로 개발한 SPA 앱  
+- 상태 관리를 위해 Redux 라이브러리 활용. 
+- 버튼, 박스, 시간등의 위젯은 Bootstrap 라이브러리에서 import
+
+<br>
+
 **Start** : 타이머 시작  
 **Pause** : 일시정지  
 **Reset** : 초기화  
