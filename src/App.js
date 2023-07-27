@@ -1,17 +1,33 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { decrement, increment } from './features/counter/counterSlice';
 import './App.css';
-import {useState} from 'react';
-import RButton from './components/RButton';
-import LButton from './components/LButton';
 
 function App() {
 
-  const [roundCnt, setRoundCnt] = useState(0);
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
 
   return (
     <div className="App">
-      <h1>Hello world</h1>
-      <RButton/>
-      <LButton/>
+        <div>
+          <button
+            aria-label="Increment value"
+            onClick={() => dispatch(increment())}
+          >
+            Increment
+          </button>
+          
+          <button
+            aria-label="Decrement value"
+            onClick={() => dispatch(decrement())}
+          >
+            Decrement
+          </button>
+        </div>
+
+        <div>
+          <span>{count}</span>
+        </div>
     </div>
   );
 }
