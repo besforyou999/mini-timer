@@ -1,13 +1,20 @@
 import React from 'react';
+import { decrement } from '../features/counter/counterSlice';
+import { useDispatch } from 'react-redux';
 
-class RButton extends React.Component {
-    render() {
-        return (
-            <div>
-                RButton
-            </div>
-        );
-    }
+function RButton () {
+
+    const dispatch = useDispatch();
+
+    return (
+        <div>
+            <button
+                onClick={() => dispatch(decrement())}
+            >
+                Decrement
+            </button>
+        </div>
+    );
 }
 
 
