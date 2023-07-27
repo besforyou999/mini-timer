@@ -1,13 +1,20 @@
 import React from 'react';
+import { increment } from '../features/counter/counterSlice';
+import { useDispatch } from 'react-redux';
 
-class LButton extends React.Component {
-    render() {
-        return (
-            <div>
-                LButton
-            </div>
-        );
-    }
+function LButton () {
+
+    const dispatch = useDispatch();
+
+    return (
+        <div>
+            <button
+                onClick={() => dispatch(increment())}
+            >
+                Increment
+            </button>
+        </div>
+    );
 }
 
 

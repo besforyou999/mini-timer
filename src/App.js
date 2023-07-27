@@ -1,17 +1,23 @@
+import { useSelector } from 'react-redux';
 import './App.css';
-import {useState} from 'react';
-import RButton from './components/RButton';
 import LButton from './components/LButton';
+import RButton from './components/RButton';
+
 
 function App() {
 
-  const [roundCnt, setRoundCnt] = useState(0);
+  const count = useSelector((state) => state.counter.value);
 
   return (
     <div className="App">
-      <h1>Hello world</h1>
-      <RButton/>
-      <LButton/>
+        <div>
+          <LButton></LButton>
+          <RButton></RButton>
+        </div>
+
+        <div>
+          <span>{count}</span>
+        </div>
     </div>
   );
 }
