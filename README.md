@@ -8,18 +8,13 @@ React로 개발한 타이머 토이 프로젝트
 ## 프로젝트 설명
 <br>
 
-React로 개발한 타이머 토이 프로젝트. 타이머의 기초 기능에 버튼 터치된 시간을 목록에 기록할 수 있는 버튼을 추가.
-
-React로 개발한 SPA 앱으로 상태 관리를 위해 Redux 라이브러리 활용.  
-
-버튼, 박스, 시간등의 위젯은 React-bootstrap에서 import
+React로 개발한 타이머 토이 프로젝트.
 
 <br>
 
-**Start** : 타이머 시작  
-**Pause** : 일시정지  
-**Reset** : 초기화  
-**Round** : 기록  
+**사용 라이브러리**
+
+React, Redux, Bootstrap
 
 <br>
 
@@ -105,7 +100,3 @@ React로 개발한 SPA 앱으로 상태 관리를 위해 Redux 라이브러리 �
 
 
 <br>
-
-### 사용 라이브러리
-
-React, Redux, React-Bootstrap
