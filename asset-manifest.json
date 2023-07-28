@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mini-timer/static/css/main.aaf4b24e.css",
+    "main.js": "/mini-timer/static/js/main.fe5c8671.js",
+    "index.html": "/mini-timer/index.html",
+    "main.aaf4b24e.css.map": "/mini-timer/static/css/main.aaf4b24e.css.map",
+    "main.fe5c8671.js.map": "/mini-timer/static/js/main.fe5c8671.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aaf4b24e.css",
+    "static/js/main.fe5c8671.js"
+  ]
+}
